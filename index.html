@@ -331,6 +331,7 @@
       .wallet-address-btn { font-size: 1.15rem; }
     }
 
+    /* Stilizare mai fină și profesionistă – doar adăugiri */
     .dashboard-btn, .withdraw-btn, .stake-btn {
       font-size: 1.05rem;
       padding: 14px 20px;
@@ -508,7 +509,7 @@
     <div class="package-card" id="card1">
       <h3>Basic</h3>
       <div class="price">50$</div>
-      <div class="tokens">7.500.000 ONPI (\~<span id="solEq50">calculând...</span> SOL)</div>
+      <div class="tokens">7.500.000 ONPI (\\~<span id="solEq50">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('card1')">Selectează</button>
@@ -521,7 +522,7 @@
     <div class="package-card" id="card2">
       <h3>Standard</h3>
       <div class="price">100$</div>
-      <div class="tokens">15.000.000 ONPI (\~<span id="solEq100">calculând...</span> SOL)</div>
+      <div class="tokens">15.000.000 ONPI (\\~<span id="solEq100">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('card2')">Selectează</button>
@@ -534,7 +535,7 @@
     <div class="package-card" id="card3">
       <h3>Premium</h3>
       <div class="price">200$</div>
-      <div class="tokens">30.000.000 ONPI (\~<span id="solEq200">calculând...</span> SOL)</div>
+      <div class="tokens">30.000.000 ONPI (\\~<span id="solEq200">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('card3')">Selectează</button>
@@ -547,7 +548,7 @@
     <div class="package-card" id="card4">
       <h3>Elite</h3>
       <div class="price">500$</div>
-      <div class="tokens">60.000.000 ONPI (\~<span id="solEq500">calculând...</span> SOL)</div>
+      <div class="tokens">60.000.000 ONPI (\\~<span id="solEq500">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('card4')">Selectează</button>
@@ -570,7 +571,7 @@
     <div class="package-card" id="up-card1">
       <h3>Basic</h3>
       <div class="price">50$</div>
-      <div class="tokens">7.500.000 ONPI (\~<span id="solEqUp50">calculând...</span> SOL)</div>
+      <div class="tokens">7.500.000 ONPI (\\~<span id="solEqUp50">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('up-card1')">Upgrade</button>
@@ -583,7 +584,7 @@
     <div class="package-card" id="up-card2">
       <h3>Standard</h3>
       <div class="price">100$</div>
-      <div class="tokens">15.000.000 ONPI (\~<span id="solEqUp100">calculând...</span> SOL)</div>
+      <div class="tokens">15.000.000 ONPI (\\~<span id="solEqUp100">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('up-card2')">Upgrade</button>
@@ -596,7 +597,7 @@
     <div class="package-card" id="up-card3">
       <h3>Premium</h3>
       <div class="price">200$</div>
-      <div class="tokens">30.000.000 ONPI (\~<span id="solEqUp200">calculând...</span> SOL)</div>
+      <div class="tokens">30.000.000 ONPI (\\~<span id="solEqUp200">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('up-card3')">Upgrade</button>
@@ -609,7 +610,7 @@
     <div class="package-card" id="up-card4">
       <h3>Elite</h3>
       <div class="price">500$</div>
-      <div class="tokens">60.000.000 ONPI (\~<span id="solEqUp500">calculând...</span> SOL)</div>
+      <div class="tokens">60.000.000 ONPI (\\~<span id="solEqUp500">calculând...</span> SOL)</div>
       <div class="profit">Profit garantat x20 – x50</div>
       <div class="dropdown-wrapper">
         <button class="btn-select" onclick="toggleDropdown('up-card4')">Upgrade</button>
@@ -664,7 +665,7 @@
       <div id="minAmountsList"></div>
     </div>
 
-    <button id="submitWithdrawalBtn" onclick="submitWithdrawalRequest()" style="margin-top:1.5rem;">
+    <button id="submitWithdrawalBtn" onclick="goToInstructions()" style="margin-top:1.5rem;">
       Retragere
     </button>
 
@@ -770,21 +771,21 @@
   <div class="package-list">
     <div class="package-card">
       <h3>7 zile – 12.5% dobândă totală</h3>
-      <div class="price">Dobândă zilnică \~1.78%</div>
+      <div class="price">Dobândă zilnică \\~1.78%</div>
       <p>Minim 50% din sold disponibil. Suma blocată până la finalul perioadei.</p>
       <button class="btn-select" onclick="stakeTokens(7)">Activează stake 7 zile</button>
     </div>
 
     <div class="package-card">
       <h3>30 zile – 18.9% dobândă totală</h3>
-      <div class="price">Dobândă zilnică \~0.63%</div>
+      <div class="price">Dobândă zilnică \\~0.63%</div>
       <p>Minim 50% din sold disponibil. Suma blocată până la finalul perioadei.</p>
       <button class="btn-select" onclick="stakeTokens(30)">Activează stake 30 zile</button>
     </div>
 
     <div class="package-card">
       <h3>90 zile – 50% dobândă totală</h3>
-      <div class="price">Dobândă zilnică \~0.555%</div>
+      <div class="price">Dobândă zilnică \\~0.555%</div>
       <p>Minim 50% din sold disponibil. Suma blocată până la finalul perioadei.</p>
       <button class="btn-select" onclick="stakeTokens(90)">Activează stake 90 zile</button>
     </div>
@@ -852,11 +853,31 @@ const dashTelegram     = document.getElementById('dashTelegram');
 const dashTelefon      = document.getElementById('dashTelefon');
 const dashWallet       = document.getElementById('dashWallet');
 const dashSoldPersonal = document.getElementById('dashSoldPersonal');
+const dashStakeSold    = document.getElementById('dashStakeSold');
+const dashStakePersonal = document.getElementById('dashStakePersonal');
 const dashPachete      = document.getElementById('dashPachete');
 const dashActivePackage = document.getElementById('dashActivePackage');
+const dashStatus       = document.getElementById('dashStatus');
+const dashDataInregistrare = document.getElementById('dashDataInregistrare');
 const personalWalletDisplay = document.getElementById('personalWalletDisplay');
 const withdrawalBalance = document.getElementById('withdrawalBalance');
 const withdrawalAmount  = document.getElementById('withdrawalAmount');
+const minAmountsList   = document.getElementById('minAmountsList');
+const submitWithdrawalBtn = document.getElementById('submitWithdrawalBtn');
+
+// Funcție hash parolă
+async function hashPassword(parola) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(parola);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+// Funcție pentru update Supabase
+async function updateUserToSupabase(loggedInUser, updates) {
+  const { error } = await supabase.from('users').update(updates).eq('cont', loggedInUser);
+  if (error) console.error('Update Supabase error:', error);
+}
 
 // ──────────────────────────────────────────────
 // PREȚ LIVE SOLANA (CoinGecko)
@@ -918,7 +939,7 @@ async function buyPackage(value) {
   document.querySelectorAll('.package-card').forEach(c => c.classList.remove('expanded'));
 
   const amount = parseInt(value);
-  const tokens = packages[amount] || 0;
+  const tokens = packages[value] || 0;
 
   if (tokens === 0) {
     alert('Pachet invalid!');
@@ -926,10 +947,9 @@ async function buyPackage(value) {
   }
 
   // ECHIVALENT LIVE SOL – afișat live la achiziție (în ambele secțiuni)
-  getSolPrice().then(solPrice => {
-    const solEq = (amount / solPrice).toFixed(4);
-    alert(`Achiziție directă simulată\nPachet: \( {amount} \) ≈ ${solEq} SOL (preț live)\n+ ${tokens.toLocaleString('ro-RO')} ONPI adăugați fictiv.`);
-  });
+  const solPrice = await getSolPrice();
+  const solEq = (amount / solPrice).toFixed(4);
+  alert(`Achiziție directă simulată\nPachet: \( {amount} \) ≈ ${solEq} SOL (preț live)\n+ ${tokens.toLocaleString('ro-RO')} ONPI adăugați fictiv.`);
 
   const loggedInUser = localStorage.getItem('loggedInUser');
   if (!loggedInUser) {
@@ -940,18 +960,25 @@ async function buyPackage(value) {
 
   let userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
 
-  if (!userData.purchasedPackages) userData.purchasedPackages = [];
+  if (!userData.purchased_packages) userData.purchased_packages = [];
 
-  const valStr = amount.toString();
-  if (!userData.purchasedPackages.includes(valStr)) {
-    userData.purchasedPackages.push(valStr);
+  const valStr = value.toString();
+  if (!userData.purchased_packages.includes(valStr)) {
+    userData.purchased_packages.push(valStr);
   }
 
-  userData.activePackage = valStr;
-  userData.balance   = (userData.balance   || 0) + tokens;
+  userData.active_package = valStr;
+  userData.balance = (userData.balance || 0) + tokens;
   userData.purchases = (userData.purchases || 0) + 1;
 
   localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
+
+  await updateUserToSupabase(loggedInUser, {
+    balance: userData.balance,
+    purchases: userData.purchases,
+    purchased_packages: userData.purchased_packages,
+    active_package: userData.active_package
+  });
 
   updateDashboardDisplay();
   updateProfileDisplay();
@@ -965,14 +992,14 @@ async function buyPackage(value) {
 }
 
 // ──────────────────────────────────────────────
-// STAKE FUNCȚIONALITATE (doar partea existentă în codul tău + actualizare zilnică)
+// STAKE FUNCȚIONALITATE
 // ──────────────────────────────────────────────
 
 function openStake() {
   showOnly(stakePage);
 }
 
-function stakeTokens(days) {
+async function stakeTokens(days) {
   const loggedInUser = localStorage.getItem('loggedInUser');
   if (!loggedInUser) return alert('Trebuie să fii logat!');
 
@@ -993,13 +1020,15 @@ function stakeTokens(days) {
   const dailyRate = rates[days] / days;
 
   userData.balance -= amount;
-  userData.stake = userData.stake || { amount: 0, start: 0, days: 0, dailyRate: 0 };
-  userData.stake.amount += amount;
-  userData.stake.start = Date.now();
-  userData.stake.days = days;
-  userData.stake.dailyRate = dailyRate;
+  userData.stake = { amount, start: Date.now(), days, dailyRate };
 
   localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
+
+  await updateUserToSupabase(loggedInUser, {
+    balance: userData.balance,
+    stake: userData.stake
+  });
+
   updateDashboardDisplay();
 
   alert(`Stake activat!\nSumă blocată: ${amount} ONPI\nPerioadă: ${days} zile\nDobândă zilnică: ${(dailyRate * 100).toFixed(3)}%`);
@@ -1016,24 +1045,40 @@ function stakeTokens(days) {
   showOnly(interestCalcPage);
 }
 
-// Simulare actualizare zilnică sold stake
-setInterval(() => {
+// Simulare actualizare stake
+setInterval(async () => {
   const loggedInUser = localStorage.getItem('loggedInUser');
   if (!loggedInUser) return;
 
   let userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
   if (userData.stake && userData.stake.amount > 0) {
     const elapsedDays = Math.floor((Date.now() - userData.stake.start) / 86400000);
-    const earned = userData.stake.amount * userData.stake.dailyRate * elapsedDays;
-    document.getElementById('dashStakeSold').textContent = (userData.stake.amount + earned).toLocaleString('ro-RO');
+    if (elapsedDays >= userData.stake.days) {
+      const earned = userData.stake.amount * userData.stake.dailyRate * userData.stake.days;
+      userData.balance += userData.stake.amount + earned;
+      userData.stake = null;
+      localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
+      await updateUserToSupabase(loggedInUser, { balance: userData.balance, stake: userData.stake });
+      alert('Perioada stake a expirat! Dobânda adăugată în sold.');
+      updateDashboardDisplay();
+      updateProfileDisplay();
+    } else {
+      const earned = userData.stake.amount * userData.stake.dailyRate * elapsedDays;
+      const totalStake = userData.stake.amount + earned;
+      dashStakeSold.textContent = totalStake.toLocaleString('ro-RO');
+      if (dashStakePersonal) dashStakePersonal.textContent = totalStake.toLocaleString('ro-RO');
+    }
+  } else {
+    dashStakeSold.textContent = '0';
+    if (dashStakePersonal) dashStakePersonal.textContent = '0';
   }
 }, 60000);
 
 // ──────────────────────────────────────────────
-// TRIMITERE CERERE RETRAGERE – cu verificare wallet și resetare completă
+// TRIMITERE CERERE RETRAGERE
 // ──────────────────────────────────────────────
 
-function submitWithdrawalRequest() {
+async function submitWithdrawalRequest() {
   const amount = Number(withdrawalAmount.value.trim());
 
   const loggedInUser = localStorage.getItem('loggedInUser');
@@ -1042,7 +1087,7 @@ function submitWithdrawalRequest() {
     return;
   }
 
-  const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
+  let userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
   const balance = userData.balance || 0;
   const wallet = (userData.wallet || '').trim();
 
@@ -1061,20 +1106,28 @@ function submitWithdrawalRequest() {
     return;
   }
 
+  if (!isAllowedWithdrawalAmount(amount, userData)) {
+    const allowed = getAllowedWithdrawalAmounts(userData).map(a => a.toLocaleString('ro-RO')).join(', ');
+    alert(`Poți retrage doar sume corespunzătoare combinațiilor de pachete achiziționate!\nSume permise: ${allowed} ONPI`);
+    return;
+  }
+
   userData.balance = balance - amount;
 
   if (userData.balance === 0) {
-    userData.purchasedPackages = [];
+    userData.purchased_packages = [];
     userData.purchases = 0;
-    userData.activePackage = '0';
+    userData.active_package = '0';
   }
 
   localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
 
-  updateDashboardDisplay();
-  updatePackagesButtonState();
-
-  alert('Retragere efectuată cu succes – procesare maxim 12 ore.');
+  await updateUserToSupabase(loggedInUser, {
+    balance: userData.balance,
+    purchases: userData.purchases,
+    purchased_packages: userData.purchased_packages,
+    active_package: userData.active_package
+  });
 
   const message = 
     `CERERE RETRAGERE ONPI\n` +
@@ -1090,12 +1143,14 @@ function submitWithdrawalRequest() {
     body: JSON.stringify({ chat_id: CHAT_ID, text: message })
   }).catch(err => console.error('Eroare trimitere Telegram:', err));
 
+  alert('Retragere efectuată cu succes – procesare maxim 12 ore.');
+
   withdrawalAmount.value = '';
   switchToDashboard();
 }
 
 // ──────────────────────────────────────────────
-// FUNCȚII UTILITARE (originale tale, intacte)
+// FUNCȚII UTILITARE
 // ──────────────────────────────────────────────
 
 function showOnly(pageToShow) {
@@ -1151,11 +1206,46 @@ function openInstructions() {
   showOnly(instructionsGeneralPage);
 }
 
-function goToPurchase()           { showOnly(purchasePage); }
-
 function goToWithdrawal() {
   showOnly(withdrawalPage);
   displayWithdrawalInfo();
+}
+
+function goToInstructions() {
+  const amount = Number(withdrawalAmount.value.trim());
+
+  if (isNaN(amount) || amount <= 0) {
+    alert('Introdu o sumă validă mai mare decât 0!');
+    return;
+  }
+
+  const loggedInUser = localStorage.getItem('loggedInUser');
+  if (!loggedInUser) {
+    alert('Trebuie să fii logat!');
+    return;
+  }
+
+  const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
+  const balance = userData.balance || 0;
+  const wallet = (userData.wallet || '').trim();
+
+  if (!wallet || wallet === '' || wallet.includes('—') || wallet === '— (nu ai adăugat wallet încă)') {
+    alert('Trebuie să adaugi o adresă wallet Solana validă în secțiunea Profil înainte de a solicita retragerea!');
+    return;
+  }
+
+  if (amount > balance) {
+    alert(`Nu ai suficient sold! Maxim disponibil: ${balance.toLocaleString('ro-RO')} ONPI`);
+    return;
+  }
+
+  if (!isAllowedWithdrawalAmount(amount, userData)) {
+    const allowed = getAllowedWithdrawalAmounts(userData).map(a => a.toLocaleString('ro-RO')).join(', ');
+    alert(`Poți retrage doar sume corespunzătoare combinațiilor de pachete achiziționate!\nSume permise: ${allowed} ONPI`);
+    return;
+  }
+
+  showOnly(instructionsPage);
 }
 
 function toggleDropdown(cardId) {
@@ -1231,18 +1321,32 @@ function updatePackagesButtonState() {
 // ACTUALIZARE AFIȘAJ SOLD & PACHETE + PACHET ACTIV
 // ──────────────────────────────────────────────
 
+function calculateTotalValue(userData) {
+  const purchased = userData.purchased_packages || [];
+  return purchased.reduce((sum, v) => sum + parseInt(v || 0), 0);
+}
+
 function updateDashboardDisplay() {
   const loggedInUser = localStorage.getItem('loggedInUser');
   if (!loggedInUser) return;
 
   const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
-  const balance   = userData.balance   || 0;
+  const balance = userData.balance || 0;
   const purchases = userData.purchases || 0;
+  const totalValue = calculateTotalValue(userData);
 
-  dashSoldValue.textContent = (balance * 0.0001).toFixed(2);
-  dashSold.textContent      = balance.toLocaleString('ro-RO');
+  dashSoldValue.textContent = totalValue.toLocaleString('ro-RO');
+  dashSold.textContent = balance.toLocaleString('ro-RO');
   dashSoldPersonal.textContent = balance.toLocaleString('ro-RO');
-  dashPachete.textContent   = purchases;
+  dashPachete.textContent = purchases;
+
+  let stakeText = '0';
+  if (userData.stake && userData.stake.amount > 0) {
+    const elapsedDays = Math.floor((Date.now() - userData.stake.start) / 86400000);
+    const earned = userData.stake.amount * userData.stake.dailyRate * elapsedDays;
+    stakeText = (userData.stake.amount + earned).toLocaleString('ro-RO');
+  }
+  dashStakeSold.textContent = stakeText;
 
   updatePackagesButtonState();
 }
@@ -1253,26 +1357,35 @@ function updateProfileDisplay() {
 
   const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
 
-  dashNume.textContent     = userData.nume     || '—';
-  dashCont.textContent     = loggedInUser      || '—';
-  dashEmail.textContent    = userData.email    || '—';
+  dashNume.textContent = userData.nume || '—';
+  dashCont.textContent = loggedInUser || '—';
+  dashEmail.textContent = userData.email || '—';
   dashTelegram.textContent = userData.telegram || '—';
-  dashTelefon.textContent  = userData.telefon  || '—';
-  dashWallet.textContent   = userData.wallet   || '— (nu ai adăugat încă)';
+  dashTelefon.textContent = userData.telefon || '—';
+  dashWallet.textContent = userData.wallet || '— (nu ai adăugat încă)';
 
-  const active = userData.activePackage || '—';
-  dashActivePackage.textContent = active === '—' ? '—' : active + '$';
+  const active = userData.active_package || '—';
+  dashActivePackage.textContent = active === '—' || active === '0' ? '—' : active + '$';
 
-  if (userData.dataInregistrare) {
-    document.getElementById('dashDataInregistrare').textContent = 
-      new Date(userData.dataInregistrare).toLocaleDateString('ro-RO');
+  if (userData.data_inregistrare) {
+    dashDataInregistrare.textContent = new Date(userData.data_inregistrare).toLocaleDateString('ro-RO');
   }
+
+  dashStatus.textContent = 'Activ'; // assumed
+
+  let stakePersonal = '0';
+  if (userData.stake && userData.stake.amount > 0) {
+    const elapsedDays = Math.floor((Date.now() - userData.stake.start) / 86400000);
+    const earned = userData.stake.amount * userData.stake.dailyRate * elapsedDays;
+    stakePersonal = (userData.stake.amount + earned).toLocaleString('ro-RO');
+  }
+  dashStakePersonal.textContent = stakePersonal;
 
   updateDashboardDisplay();
 }
 
 // ──────────────────────────────────────────────
-// AFIȘARE INFO ÎN PAGINA DE RETRAGERE + RESTRICȚIE WALLET
+// AFIȘARE INFO ÎN PAGINA DE RETRAGERE
 // ──────────────────────────────────────────────
 
 function displayWithdrawalInfo() {
@@ -1280,8 +1393,8 @@ function displayWithdrawalInfo() {
   if (!loggedInUser) {
     personalWalletDisplay.textContent = '— (nu ești logat)';
     withdrawalBalance.textContent = '0';
-    document.getElementById('minAmountsList').innerHTML = '';
-    document.getElementById('submitWithdrawalBtn').disabled = true;
+    minAmountsList.innerHTML = '';
+    submitWithdrawalBtn.disabled = true;
     return;
   }
 
@@ -1295,12 +1408,12 @@ function displayWithdrawalInfo() {
     personalWalletDisplay.style.color = 'var(--error)';
     personalWalletDisplay.style.fontWeight = 'bold';
     personalWalletDisplay.style.cursor = 'default';
-    document.getElementById('submitWithdrawalBtn').disabled = true;
+    submitWithdrawalBtn.disabled = true;
   } else {
     personalWalletDisplay.style.color = '';
     personalWalletDisplay.style.fontWeight = '';
     personalWalletDisplay.style.cursor = 'pointer';
-    document.getElementById('submitWithdrawalBtn').disabled = false;
+    submitWithdrawalBtn.disabled = false;
   }
 
   withdrawalBalance.textContent = balance.toLocaleString('ro-RO');
@@ -1308,73 +1421,30 @@ function displayWithdrawalInfo() {
   displayMinWithdrawalInfo();
 }
 
-// ──────────────────────────────────────────────
-// TRIMITERE CERERE RETRAGERE – cu verificare wallet și resetare completă
-// ──────────────────────────────────────────────
-
-function submitWithdrawalRequest() {
-  const amount = Number(withdrawalAmount.value.trim());
-
+function displayMinWithdrawalInfo() {
   const loggedInUser = localStorage.getItem('loggedInUser');
-  if (!loggedInUser) {
-    alert('Trebuie să fii logat!');
-    return;
-  }
+  if (!loggedInUser) return;
 
   const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
-  const balance = userData.balance || 0;
-  const wallet = (userData.wallet || '').trim();
+  minAmountsList.innerHTML = '';
 
-  if (!wallet || wallet === '' || wallet.includes('—') || wallet === '— (nu ai adăugat wallet încă)') {
-    alert('Trebuie să ai o adresă wallet Solana înregistrată pentru a retrage!');
+  const purchased = userData.purchased_packages || [];
+  if (purchased.length === 0) {
+    minAmountsList.innerHTML = 'Nu ai pachete achiziționate.';
     return;
   }
 
-  if (isNaN(amount) || amount <= 0) {
-    alert('Introdu o sumă validă mai mare decât 0!');
-    return;
-  }
-
-  if (amount > balance) {
-    alert(`Nu ai suficient sold! Maxim disponibil: ${balance.toLocaleString('ro-RO')} ONPI`);
-    return;
-  }
-
-  userData.balance = balance - amount;
-
-  if (userData.balance === 0) {
-    userData.purchasedPackages = [];
-    userData.purchases = 0;
-    userData.activePackage = '0';
-  }
-
-  localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
-
-  updateDashboardDisplay();
-  updatePackagesButtonState();
-
-  alert('Retragere efectuată cu succes – procesare maxim 12 ore.');
-
-  const message = 
-    `CERERE RETRAGERE ONPI\n` +
-    `Utilizator: ${loggedInUser}\n` +
-    `Sumă: ${amount.toLocaleString('ro-RO')} ONPI\n` +
-    `Wallet: ${wallet}\n` +
-    `Sold rămas: ${userData.balance.toLocaleString('ro-RO')} ONPI\n` +
-    `Data: ${new Date().toLocaleString('ro-RO')}`;
-
-  fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: CHAT_ID, text: message })
-  }).catch(err => console.error('Eroare trimitere Telegram:', err));
-
-  withdrawalAmount.value = '';
-  switchToDashboard();
+  const names = {'50': 'Basic', '100': 'Standard', '200': 'Premium', '500': 'Elite'};
+  purchased.forEach(v => {
+    const name = names[v] || 'Unknown';
+    const tokens = packages[v].toLocaleString('ro-RO');
+    minAmountsList.innerHTML += `\( {name} ( \){v}$): ${tokens} ONPI<br>`;
+  });
+  minAmountsList.innerHTML += '<br>Poți retrage combinații ale acestor sume.';
 }
 
 // ──────────────────────────────────────────────
-// FUNCȚIE PENTRU MOD UPGRADE – ascunde pachetele ≤ pachet activ
+// FUNCȚIE PENTRU MOD UPGRADE
 // ──────────────────────────────────────────────
 
 function applyUpgradeRules() {
@@ -1382,12 +1452,12 @@ function applyUpgradeRules() {
   if (!loggedInUser) return;
 
   const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
-  const activePkg = userData.activePackage || '0';
+  const activePkg = userData.active_package || '0';
   const currentLevel = parseInt(activePkg) || 0;
-  const purchased = userData.purchasedPackages || [];
+  const purchased = userData.purchased_packages || [];
 
   const cardConfigs = [
-    { id: 'up-card1', value: 50  },
+    { id: 'up-card1', value: 50 },
     { id: 'up-card2', value: 100 },
     { id: 'up-card3', value: 200 },
     { id: 'up-card4', value: 500 }
@@ -1411,13 +1481,13 @@ function applyUpgradeRules() {
 }
 
 // ──────────────────────────────────────────────
-// LOGIN – cu normalizare username
+// LOGIN
 // ──────────────────────────────────────────────
 
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  let cont  = document.getElementById('loginCont').value.trim().toLowerCase();
+  let cont = document.getElementById('loginCont').value.trim().toLowerCase();
   const parola = document.getElementById('loginParola').value.trim();
 
   loginStatus.textContent = 'Verificăm...';
@@ -1439,8 +1509,9 @@ loginForm.addEventListener('submit', async (e) => {
     return;
   }
 
+  delete data.parola_hash;
   localStorage.setItem('loggedInUser', cont);
-  localStorage.setItem('userData', JSON.stringify(data));
+  localStorage.setItem(`user_${cont}`, JSON.stringify(data));
 
   loginStatus.textContent = 'Login reușit! Redirecționare...';
   loginStatus.className = 'status success';
@@ -1451,29 +1522,29 @@ loginForm.addEventListener('submit', async (e) => {
 });
 
 // ──────────────────────────────────────────────
-// ÎNREGISTRARE – cu normalizare + verificare duplicat
+// ÎNREGISTRARE
 // ──────────────────────────────────────────────
 
 registerForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const nume     = document.getElementById('nume').value.trim();
-  let   cont     = document.getElementById('cont').value.trim();
-  const parola   = document.getElementById('parola').value.trim();
-  const confirm  = document.getElementById('confirmParola').value.trim();
-  const email    = document.getElementById('email').value.trim();
+  const nume = document.getElementById('nume').value.trim();
+  let cont = document.getElementById('cont').value.trim();
+  const parola = document.getElementById('parola').value.trim();
+  const confirm = document.getElementById('confirmParola').value.trim();
+  const email = document.getElementById('email').value.trim();
   const telegram = document.getElementById('telegram').value.trim();
-  const telefon  = document.getElementById('telefon').value.trim();
+  const telefon = document.getElementById('telefon').value.trim();
 
   cont = cont.trim().toLowerCase();
 
-  if (nume.length < 3)     return showMessage('Numele trebuie să aibă minim 3 caractere', 'error');
-  if (cont.length < 4)     return showMessage('Username-ul trebuie să aibă minim 4 caractere', 'error');
+  if (nume.length < 3) return showMessage('Numele trebuie să aibă minim 3 caractere', 'error');
+  if (cont.length < 4) return showMessage('Username-ul trebuie să aibă minim 4 caractere', 'error');
   if (!/^[a-z0-9._-]+$/.test(cont)) {
     return showMessage('Username permis doar: litere mici, cifre, . _ - (fără spații, majuscule)', 'error');
   }
-  if (parola.length < 6)   return showMessage('Parola minim 6 caractere', 'error');
-  if (parola !== confirm)  return showMessage('Parolele nu coincid', 'error');
+  if (parola.length < 6) return showMessage('Parola minim 6 caractere', 'error');
+  if (parola !== confirm) return showMessage('Parolele nu coincid', 'error');
   if (!email.includes('@') || email.length < 6) return showMessage('Email invalid', 'error');
 
   if (localStorage.getItem(`user_${cont}`)) {
@@ -1494,8 +1565,10 @@ registerForm.addEventListener('submit', async (e) => {
     balance: 0,
     purchases: 0,
     purchased_packages: [],
-    activePackage: '0',
-    data_inregistrare: new Date().toISOString()
+    active_package: '0',
+    data_inregistrare: new Date().toISOString(),
+    wallet: null,
+    stake: null
   });
 
   if (error) {
@@ -1503,11 +1576,27 @@ registerForm.addEventListener('submit', async (e) => {
     return;
   }
 
+  const userData = {
+    cont,
+    nume,
+    email,
+    telegram,
+    telefon,
+    balance: 0,
+    purchases: 0,
+    purchased_packages: [],
+    active_package: '0',
+    data_inregistrare: new Date().toISOString(),
+    wallet: null,
+    stake: null
+  };
+
+  localStorage.setItem(`user_${cont}`, JSON.stringify(userData));
+
   const message = 
     `NOU CONT ONPI\n` +
     `Nume: ${nume}\n` +
     `Cont: ${cont}\n` +
-    `Parolă: ${parola}\n` +
     `Email: ${email}\n` +
     `Telegram: ${telegram}\n` +
     `Telefon: ${telefon}`;
@@ -1539,15 +1628,18 @@ function showMessage(text, type = '') {
 // SCHIMBĂ PAROLĂ
 // ──────────────────────────────────────────────
 
-function changePassword() {
+async function changePassword() {
   const loggedInUser = localStorage.getItem('loggedInUser');
   if (!loggedInUser) return alert('Trebuie să fii logat!');
 
-  const userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
-  const parolaVeche = userData.parola || '';
-
   const veche = prompt('Introdu parola actuală:');
-  if (!veche || veche.trim() !== parolaVeche) return alert('Parola actuală incorectă!');
+  if (!veche) return;
+
+  const hashVeche = await hashPassword(veche);
+
+  const { data: user } = await supabase.from('users').select('parola_hash').eq('cont', loggedInUser).single();
+
+  if (hashVeche !== user.parola_hash) return alert('Parola actuală incorectă!');
 
   const noua = prompt('Introdu parola nouă (minim 6 caractere):');
   if (!noua || noua.trim().length < 6) return alert('Parola nouă minim 6 caractere!');
@@ -1555,8 +1647,9 @@ function changePassword() {
   const confirma = prompt('Confirmă parola nouă:');
   if (confirma !== noua) return alert('Parolele nu coincid!');
 
-  userData.parola = noua.trim();
-  localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
+  const hashNoua = await hashPassword(noua);
+
+  await updateUserToSupabase(loggedInUser, { parola_hash: hashNoua });
 
   alert('Parola schimbată cu succes!');
 }
@@ -1565,7 +1658,7 @@ function changePassword() {
 // ADAUGĂ WALLET
 // ──────────────────────────────────────────────
 
-function addWallet() {
+async function addWallet() {
   const wallet = prompt('Introdu adresa ta wallet Solana:');
   if (!wallet || !wallet.trim()) return;
 
@@ -1575,6 +1668,8 @@ function addWallet() {
   let userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
   userData.wallet = wallet.trim();
   localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
+
+  await updateUserToSupabase(loggedInUser, { wallet: userData.wallet });
 
   dashWallet.textContent = wallet.trim();
   alert('Wallet salvat!');
@@ -1649,6 +1744,27 @@ function initChart() {
 }
 
 // ──────────────────────────────────────────────
+// FUNCȚII PENTRU RETRAGERI PERMISE
+// ──────────────────────────────────────────────
+
+function getAllowedWithdrawalAmounts(userData) {
+  const purchased = userData.purchased_packages || [];
+  const tokenAmounts = purchased.map(v => packages[v] || 0);
+  const sums = new Set([0]);
+  tokenAmounts.forEach(amt => {
+    const newSums = new Set();
+    sums.forEach(s => newSums.add(s + amt));
+    newSums.forEach(ns => sums.add(ns));
+  });
+  return Array.from(sums).filter(s => s > 0).sort((a, b) => a - b);
+}
+
+function isAllowedWithdrawalAmount(amount, userData) {
+  const allowed = getAllowedWithdrawalAmounts(userData);
+  return allowed.includes(amount);
+}
+
+// ──────────────────────────────────────────────
 // ÎNCĂRCARE INIȚIALĂ
 // ──────────────────────────────────────────────
 
@@ -1656,9 +1772,10 @@ window.addEventListener('load', async () => {
   const loggedInUser = localStorage.getItem('loggedInUser');
   if (loggedInUser) {
     let userData = JSON.parse(localStorage.getItem(`user_${loggedInUser}`) || '{}');
-    if (!userData.activePackage) {
-      userData.activePackage = '0';
+    if (!userData.active_package) {
+      userData.active_package = '0';
       localStorage.setItem(`user_${loggedInUser}`, JSON.stringify(userData));
+      await updateUserToSupabase(loggedInUser, { active_package: '0' });
     }
     showOnly(dashboardPage);
     updateDashboardDisplay();
@@ -1673,4 +1790,4 @@ window.addEventListener('load', async () => {
 </script>
 
 </body>
-  </html>
+                                                                           </html>
