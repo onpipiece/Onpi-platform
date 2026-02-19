@@ -424,4 +424,9 @@ app.post('/api/user/update', async (req, res) => {
 app.use(express.static(__dirname));
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log('API listening on', port));
+
+if (require.main === module) {
+  app.listen(port, () => console.log('API listening on', port));
+}
+
+module.exports = app;

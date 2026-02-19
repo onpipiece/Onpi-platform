@@ -2668,7 +2668,13 @@ window.addEventListener('load', async () => {
     const statusEl = document.getElementById('loginStatus');
     async function checkServer(){
       if(!statusEl) return;
-      const urls = ['/api/health','http://localhost:3000/api/health'];
+      // If the frontend is served from GitHub Pages the relative `/api` path will point
+      // to GitHub (404). Prefer an explicit backend URL for production (Railway).
+      // Replace the placeholder below with your deployed backend URL.
+      const PRODUCTION_BACKEND = 'https://your-railway-app.up.railway.app';
+      const hostIsGitHubPages = window.location.hostname.endsWith('github.io');
+      const backendBase = hostIsGitHubPages ? PRODUCTION_BACKEND : window.location.origin;
+      const urls = [backendBase + '/api/health', 'http://localhost:3000/api/health'];
       for(const u of urls){
         try{
           const res = await fetch(u, { cache: 'no-store' });
